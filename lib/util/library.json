@@ -1,6 +1,6 @@
 {
   "name": "util",
-  "version": "1.0.1",
+  "version": "0.1.0",
   "description": "A self contained util lib with no external dependencies.",
   "keywords": "no",
   "authors": [
