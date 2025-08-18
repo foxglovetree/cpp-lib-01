@@ -1,0 +1,16 @@
+{
+  "name": "util",
+  "version": "1.0.1",
+  "description": "A self contained util lib with no external dependencies.",
+  "keywords": "no",
+  "authors": [
+    {
+      "name": "FGT",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "frameworks": "*",
+  "platforms": "*"
+}

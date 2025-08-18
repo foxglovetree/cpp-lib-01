@@ -1,0 +1,18 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "description": "A simplified lib for building the the configuration or settings part of a embeded system.",
+  "keywords": "config",
+  "authors": [
+    {
+      "name": "FGT",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "fgt/util": "1.0"
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
