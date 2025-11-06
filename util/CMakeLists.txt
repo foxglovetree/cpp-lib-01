@@ -6,7 +6,7 @@ file(GLOB SOURCES
     src/*.cpp
 )
 
-add_library(${FGT_LIB_NAME} ${SOURCES})
+add_library(${FGT_LIB_NAME} SHARED ${SOURCES})
 
 # 设置公共头文件目录（供外部使用）
 target_include_directories(${FGT_LIB_NAME}
@@ -15,9 +15,10 @@ target_include_directories(${FGT_LIB_NAME}
         $<INSTALL_INTERFACE:include>
 )
 target_compile_options(${FGT_LIB_NAME} PRIVATE /utf-8)
+target_compile_definitions(${FGT_LIB_NAME} PRIVATE __FGT_UTIL_DLL_EXPORTS)
+
 # 安装规则（可选）
 install(TARGETS ${FGT_LIB_NAME}
-    EXPORT MyProjectTargets
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
     RUNTIME DESTINATION bin
