@@ -22,7 +22,7 @@ function(uppercase_first result_var input_str)
     set(${result_var} "${result}" PARENT_SCOPE)
 endfunction()
 
-set(FGT_LIB_NAME "ftg-cpp-lib-01")
+set(FGT_LIB_NAME "fgt-cpp-lib-01")
 set(FGT_SUB_MODULES util;config)
 
 project(${FGT_LIB_NAME} VERSION 1.0.0 LANGUAGES CXX)
