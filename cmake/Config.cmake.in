@@ -1,0 +1,7 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/fgtUtilLib-Targets.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/fgtConfigLib-Targets.cmake")
+
+check_required_components(fgtUtilLib)
+check_required_components(fgtConfigLib)
