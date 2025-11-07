@@ -15,7 +15,7 @@ class CodecUtil {
 public:
     template <typename T>
     static int readInt(Reader *reader, T &intV) {
-        int size = sizeof(T);
+        constexpr int size = sizeof(T);
         char buf[size];        
         int ret = reader->fullRead(buf, size);
         if (ret != size) {
@@ -34,7 +34,7 @@ public:
 
     template <typename T>
     static int writeInt(Writer *writer, T intV) {
-        int size = sizeof(T);
+        constexpr int size = sizeof(T);
         for (int i = 0; i < size; i++) {
             // no need to use unsigned type, since we do not use the sign filling bits.
             //
