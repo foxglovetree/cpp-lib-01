@@ -1,0 +1,21 @@
+{
+	"registries": [
+		{
+			"kind": "git",
+			"repository": "https://github.com/foxglovetree/vcpkg.git",
+			"baseline": "2e59fe896338b8cc11241749de9d75344783f52c", 
+			"packages": [
+				"fgt-*"
+			] 
+		}
+	],
+	"default-registry": {
+		"kind": "git",
+		"repository": "https://github.com/microsoft/vcpkg.git",
+		"baseline": "74e6536215718009aae747d86d84b78376bf9e09" 
+	},
+	"overlay-ports" :["D:/git/vcpkg/ports"]
+		
+
+}
+
