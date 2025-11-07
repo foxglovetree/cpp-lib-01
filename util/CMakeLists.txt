@@ -19,6 +19,7 @@ target_compile_definitions(${FGT_LIB_NAME} PRIVATE __FGT_UTIL_DLL_EXPORTS)
 
 # 安装规则（可选）
 install(TARGETS ${FGT_LIB_NAME}
+    EXPORT ${FGT_LIB_NAME}
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
     RUNTIME DESTINATION bin
