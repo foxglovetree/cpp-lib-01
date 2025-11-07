@@ -1,0 +1,9 @@
+{
+  "default": {
+    "fgt-cpp-lib-01": {
+      "baseline": "0.2.6",
+	  "port-version": 0
+	  
+    }
+  }
+}
